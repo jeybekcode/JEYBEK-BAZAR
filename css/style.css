@@ -20,6 +20,11 @@
     font-family: "Poppins", sans-serif;
 }
    
+html {
+    font-size: 18px;
+    overscroll-behavior: contain;
+}
+
 .hidden {
     display: none;
 }
@@ -34,7 +39,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 10px;
+    margin: 0 20px;
 }
 
 .social-icons {
@@ -66,7 +71,7 @@
 
 
 .header-alert-news {
-    font-size: 0.75rem;
+    font-size: 13.5px;
     text-transform: uppercase;
     color: var(--sonic-silver)
 }
@@ -77,16 +82,21 @@
 .header-user-actions {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
 }
 
 .header-top-actions select {
     border: none;
-    min-width: 80px;
+    padding: 5px 0;
     font: inherit;
     color: var(--sonic-silver);
+    font-size: 14.6px;
     text-transform: uppercase;
     cursor: pointer;
     transition: 0.4s ease;
+}
+
+.header-top-actions select:hover { 
+    color: var(--eerie-black); 
 }
 
