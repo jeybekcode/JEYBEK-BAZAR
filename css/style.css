@@ -1,24 +1,25 @@
 :root {
     /*--- COLORS ---*/
-    --spanish-gray: hsl(0, 0%, 60%);
-    --sonic-silver: hsl(0, 0%, 47%);
-    --eerie-black: hsl(0, 0%, 13%);
-    --salmon-pink: hsl(353, 100%, 78%);
-    --sandy-brown: hsl(29, 90%, 65%);
-    --bittersweet: hsl(0, 100%, 70%);
-    --ocean-green: hsl(152, 51%, 52%);
-    --davys-gray: hsl(0, 0%, 33%);
-    --cultured: hsl(0, 0%, 93%);
-    --white: hsl(0, 100%, 100%);
-    --onyx: hsl(0, 0%, 27%);
+    --spanish-gray: rgb(153, 153, 153);
+    --sonic-silver: rgb(120, 120, 120);
+    --eerie-black: rgb(33, 33, 33);
+    --salmon-pink: rgb(255, 143, 156);
+    --sandy-brown: rgb(246, 163, 85);
+    --bittersweet: rgb(255, 102, 102);
+    --ocean-green: rgb(70, 195, 137);
+    --davys-gray: rgb(84, 84, 84);
+    --cultured: rgb(237, 237, 237);
+    --white: rgb(255, 255, 255);
+    --onyx: rgb(69, 69, 69);
 }
 
 *, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
-
+   
 .hidden {
     display: none;
 }
@@ -37,6 +38,55 @@
 }
 
 .social-icons {
-    width: 17px;
-    height: 17px;
+    width: 14px;
+    height: 14px;
 }
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}    
+
+.icons a {
+    padding: 5px;
+    background-color: rgb(242, 242, 242);
+    color: var(--sonic-silver);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    transition:  background-color 0.4s ease,
+    color 0.4s ease;
+}
+
+.icons a:hover {
+    background-color: var(--salmon-pink);
+    color: rgb(255, 255, 255);
+}
+
+
+.header-alert-news {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: var(--sonic-silver)
+}
+.header-alert-news b {
+    font-weight: 500;
+}
+
+.header-user-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-top-actions select {
+    border: none;
+    min-width: 80px;
+    font-size: 13px;
+    color: var(--sonic-silver);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
