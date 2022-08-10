@@ -38,8 +38,8 @@
 }
 
 .social-icons {
-    width: 14px;
-    height: 14px;
+    width: 18px;
+    height: 17px;
 }
 
 .icons {
@@ -83,7 +83,7 @@
 .header-top-actions select {
     border: none;
     min-width: 80px;
-    font-size: 13px;
+    font: inherit;
     color: var(--sonic-silver);
     text-transform: uppercase;
     cursor: pointer;
