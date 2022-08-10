@@ -100,3 +100,114 @@ html {
     color: var(--eerie-black); 
 }
 
+.navbar {
+    padding: 25px 0;
+    border-bottom: 1px solid var(--cultured);
+}
+
+.navbar .container {
+    gap: 300px;
+}
+
+.header-search-container {
+    flex-grow: 1;
+    min-width: 300px;
+    position: relative;
+}
+
+.navbar .search-field {
+    width: 100%;
+    font: inherit;
+    font-size: 0.875rem;
+    color: var(--onyx);
+    padding: 10px 15px;
+    padding-right: 50px;
+    border: 1px solid var(--cultured);
+    border-radius: 10px;
+    appearance: auto;
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: start;
+    background-color: field;
+}
+
+.search-icon {
+    width: 18px;
+    height: 18px;
+}
+
+.search-btn {
+    background-color: var(--white);
+    position: absolute;
+    top: 50%;   
+    right: 2px;
+    transform: translateY(-45%);
+    color: var(--onyx);
+    font-size: 18px;
+    padding: 3.5px 15px;
+    border-radius: 10px;
+    transition: 0.4s ease;
+    font: inherit;
+    border: none;
+    cursor: pointer;
+    appearance: auto;
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: start;
+    background-color: field;
+}
+
+.header-user-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.action-icon {
+    width: 35px;
+    height: 35px;
+}
+.header-user-actions .action-btn {
+    position: relative;
+    font-size: 35px;
+    color: var(--onyx);
+    padding: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    appearance: auto;
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: start;
+    background-color: field;
+    display: flex;
+    align-items: center;
+}
+
+.header-user-actions .count {
+    position: absolute;
+    top: 3px;
+    right: -1px;
+    background-color: var(--bittersweet);
+    color: var(--white);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1;
+    padding: 2px 4px;
+    border-radius: 20px;
+}
